@@ -88,17 +88,18 @@
           
           
           <!--/stories-->
+        <%for(var i=0;i<books.length;i++){%>
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/58.jpg" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-title" href="#"><img alt="" src="data:image/webp;base64,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" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>Repurpose Content to Reach a Wider Audience</h3>
+              <h3><%=books[i].title%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default">97thfloor.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">2 hours ago  • <a href="#" class="text-muted">Read More</a></small>
+                  <h4><span class="label label-default"><%=books[i].author%></span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">2 hours ago  • <a href="/books/<%=books[i]._id%>" class="text-muted">Read More</a></small>
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>
@@ -106,82 +107,9 @@
             </div>
           </div>
           <hr>
+        <%}%>
           
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/women/56.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>14 Useful Sites for Designers</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">devgarage.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">Yesterday • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
-                  
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/29.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>Measuring Your Link Building with Google Analytics</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">searchenginewatch.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">Yesterday • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
-
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/women/56.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>Dramatically Raise the Value of Any Piece of Content with These 27 Tactics</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">searchenginewatch.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">2 days ago • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
-          
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/29.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>TrendPaper - What's Trending in the World</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">betali.st</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">Last week • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
+         
           <!--/stories-->
           
           
